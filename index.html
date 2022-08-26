@@ -15,54 +15,7 @@
 </head>
 
 <body>
-    <nav>
-        <div class="nav-wrapper blue lighten -3  ">
-            <a href="#" class="brand-logo">İmsakiye</a>
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
-            </ul>
-        </div>
-    </nav>
-
-
-    <div class="container">
-        <div class="center">
-            <h3 class = "center">Ankara için iftar vakti </h3>
-            <!-- Display the countdown timer in an element -->
-            <p id="demo"></p>
-
-            <script>
-                // Set the date we're counting down to
-                var countDownDate = new Date("April 14, 2021 19:33:00").getTime();
-
-                // Update the count down every 1 second
-                var x = setInterval(function() {
-
-                    // Get today's date and time
-                    var now = new Date().getTime();
-
-                    // Find the distance between now and the count down date
-                    var distance = countDownDate - now;
-
-                    // Time calculations for days, hours, minutes and seconds
-                    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-                    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-                    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-                    // Display the result in the element with id="demo"
-                    document.getElementById("demo").innerHTML = hours + " saat " +
-                        minutes + " dakika " + seconds + " saniye kaldı sık dişini ";
-
-                    // If the count down is finished, write some text
-                    if (distance < 0) {
-                        clearInterval(x);
-                        document.getElementById("demo").innerHTML = "EXPIRED";
-                    }
-                }, 1000);
-            </script>
-        </div>
-
-    </div>
+<p>Wait me here<p>
 
 
 </body>
